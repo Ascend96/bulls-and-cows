@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulls and Cows</title>
+</head>
+<body>
+<div id="container">
+   <h1>Bulls and Cows</h1>
+    <div id="rules">
+        <form id="rulesForm">
+            <h2>Rules</h2>
+            <p class="rules">The cpu has generated a random number with digits 1-9 and containing no duplicates. Your goal is to guess that number in the fewest tries possible.<br>
+            If you match a number and a position you will get 1 bull, if you only match the number you will get 1 cow.
+            </p>
+        </form>
+        <input type="button" id="start" value="Start playing!" class="button">
+    </div>
+    <div id="game">
+        <input type="number" id="guess">
+        <input type="button" id="check" value="Submit">
+        <br>
+        <p>Previous:<br></p>
+        <p id="guessText"> </p>
+        <p id="result"></p>
+
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="game.js"></script>
+<link href="game.css" rel="stylesheet" type="text/css">
+</body>
+</html>
